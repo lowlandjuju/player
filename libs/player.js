@@ -275,6 +275,14 @@ export default class Player extends EventEmitter {
     this._list.push(latest)
   }
 
+  newPlaylist(songs) {
+    this.stop()
+    setTimeout(() => {
+      this._list = format(songs || [], this.options.src)
+    }, 1000)
+
+  }
+
   /**
    * [Download a mp3 file from its URI]
    * @param  {String}   src      [the src URI of mp3 file]
