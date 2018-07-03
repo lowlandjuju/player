@@ -228,7 +228,7 @@ export default class Player extends EventEmitter {
     this.stop()
     setTimeout(() => {
       this.play(nextIndex)
-    },2000)
+    },3000)
 
     return this
   }

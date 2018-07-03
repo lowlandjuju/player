@@ -268,7 +268,7 @@ var Player = (function (_EventEmitter) {
       this.stop();
       setTimeout(function () {
         _this2.play(nextIndex);
-      }, 2000);
+      }, 3000);
 
       return this;
     }
