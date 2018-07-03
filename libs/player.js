@@ -280,7 +280,6 @@ export default class Player extends EventEmitter {
     setTimeout(() => {
       this._list = format(songs || [], this.options.src)
     }, 1000)
-
   }
 
   /**
